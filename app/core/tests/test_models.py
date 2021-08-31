@@ -8,7 +8,7 @@ class ModelTest(TestCase):
         email = "test@drf.com"
         password = "Mysecurepass123"
         user = get_user_model().objects.create_user(
-            email, 
+            email,
             password
         )
         self.assertEqual(user.email, email)
